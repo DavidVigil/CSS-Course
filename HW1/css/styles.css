@@ -10,15 +10,20 @@ nav {
 }
 main {
     background-color: #e3f4ff;
-    font-size: 12px;
+    font-size: 20px;
 }
 footer {
-    background-color: #b1dfff;
+    background-color: #ffc145;
+    font-size: 15px;
 }
 li {
     display: inline-block;
     width: 150px;
+    height: 50px;
     text-align: center;
+    vertical-align: middle;
+    border: 5px solid #455dff;
+    border-radius: 10px;
 }
 h1 {
     text-align: center;
@@ -27,4 +32,14 @@ h1 {
 }
 p {
     line-height: 1.5;
+}
+a {
+    text-decoration: none;
+    color: #455dff;
+}
+img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
 }
