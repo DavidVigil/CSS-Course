@@ -6,14 +6,14 @@ header {
     background-color: #b1dfff;
 }
 nav {
-    background-color: #ffc145;
+    background-color: #ffeac1;
 }
 main {
-    background-color: #e3f4ff;
+    background-color: #dce2e5;
     font-size: 20px;
 }
 footer {
-    background-color: #ffc145;
+    background-color: #ffeac1;
     font-size: 15px;
 }
 li {
@@ -22,20 +22,21 @@ li {
     height: 50px;
     text-align: center;
     vertical-align: middle;
-    border: 5px solid #455dff;
+    border: 5px solid #455eff79;
     border-radius: 10px;
 }
 h1 {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #7c7664ee;
+    color: #ffffffee;
+    background-color: #0000005b;
+    text-shadow: 2px 2px 4px #000000aa;
 }
 p {
     line-height: 1.5;
 }
 a {
     text-decoration: none;
-    color: #455dff;
 }
 img {
     border-radius: 10px;
