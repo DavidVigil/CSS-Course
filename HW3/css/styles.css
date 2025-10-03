@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    padding-top: 29px; /* Height of the nav bar */
+    background-color: #000000;
+}
+.header{
+    margin: 0;
+    padding-bottom: 0px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#headerHome{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('https://wallpapercave.com/wp/wp400097.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#headerAbout{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('https://cdn.wallpapersafari.com/26/6/8MfTea.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#headerLocations{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('https://static0.srcdn.com/wordpress/wp-content/uploads/2023/10/major-star-wars-planets-future-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.header h1 {
+    color: white;
+    font-size: 48px;
+    margin: 0;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+}
+.header p {
+    color: white;
+    font-size: 24px;
+    margin: 0px;
+    text-shadow: 1px 1px 2px #000000;
+    text-align: center;
+    overflow: hidden;
+    max-width: 80%;
+}
+#skip {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+#skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    background-color: #111111;
+    color: #FFFFFF;
+    padding: 8px;
+    z-index: 1000;
+    outline-color: #ff0000;
+}
+nav {
+    background-color: #111111;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 999;
+    height: 30px;
+    filter: invert(100%);
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px 20px 0px 0px;
+}
+nav ul li {
+    padding: 15px 12px;
+    transition: background-color 0.3s;
+}
+nav ul li:hover {
+    background-color: #333333;
+}
+nav ul li a {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, sans-serif;   
+}
+nav ul li a:focus{
+    outline-offset: 13px;
+}
+section {
+    max-width: 60%;
+    margin: 0 auto;
+}
+article {
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-color: #111111;
+}
+section :first-child {
+    margin-top: 0;
+}
+section :last-child {
+    margin-bottom: 0;
+}
+article h2 {
+    margin: 0 0 10px;
+    color: #FFFFFF;
+}
+article h3 {
+    margin: 0 0 10px;
+    color: #FFFFFF;
+}
+p {
+    margin: 0 0 10px;
+    text-align: justify;
+    color: #FFFFFF;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+.grid-container-reverse {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    direction: rtl;
+}
+.grid-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.flex-container-loc {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.flex-container-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    align-items: center;
+}
+.flex-item {
+    flex: 1;
+}
+.flex-item img {
+    width: 100%;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+footer {
+    background-color: #111111;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 14px;
+    box-shadow: 0 -4px 8px rgba(255, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer a {
+    color: #FF0000;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        max-width: 90%;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .grid-container-reverse {
+        grid-template-columns: 1fr;
+        direction: ltr;
+    }
+    .flex-container, .flex-container-reverse {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul li {
+        padding: 10px 0;
+    }
+}
