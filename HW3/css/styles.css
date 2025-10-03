@@ -110,6 +110,10 @@ article {
     border-radius: 10px;
     padding: 10px 15px;
     background-color: #111111;
+    transition: box-shadow 0.3s;
+}
+article:hover {
+    box-shadow: 0 6px 12px rgba(255, 0, 0, 1);
 }
 section :first-child {
     margin-top: 0;
@@ -146,6 +150,8 @@ p {
 .grid-item img {
     width: 100%;
     border-radius: 10px;
+    padding: 2px;
+    border: 1px solid #FF0000;
 }
 .flex-container {
     display: flex;
@@ -173,6 +179,8 @@ p {
     width: 100%;
     border-radius: 10px;
     max-width: 400px;
+    padding: 2px;
+    border: 1px solid #FF0000;
 }
 
 footer {
